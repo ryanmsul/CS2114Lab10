@@ -323,4 +323,15 @@ public class DLListTest extends TestCase {
         list.clear();
         assertEquals(0,list.size());
     }
+    
+    /**
+     * practice test method 2
+     */
+    public void testClear2() 
+    {
+        list.add("B");
+        list.clear();
+        assertEquals(0, list.size());
+        assertFalse(list.contains("B"));
+    }
 }
